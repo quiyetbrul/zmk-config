@@ -138,22 +138,22 @@ layers:
   - Alt+Ctl+RIGHT ARROW
   - Alt+Ctl+Gui+RIGHT ARROW
   - ''
-  - BT CLR
-  - BT 1
-  - BT 2
-  - BT 3
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_RIGHT'
   - ''
-  - Boot
+  - ''
   - {type: held}
   - Gui+Alt+←
   - Alt+Gui+DOWN ARROW
   - Gui+Alt+→
   - Gui+Alt+F
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
   - ''
   - ''
   - ''
@@ -162,10 +162,10 @@ layers:
   - BT 2
   - BT 3
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&mkp MB4'
+  - '&mkp MB5'
   - ''
   - EP TOG
   - ''
