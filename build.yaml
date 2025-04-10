@@ -54,8 +54,8 @@
 ---
 include:
   ### CORNE START ###
-  ### nice_oled START ###
-  # nice_nano_v2 + nice_oled
+    ### nice_oled START ###
+    # nice_nano_v2 + nice_oled
   - board: nice_nano_v2
     shield: corne_left nice_oled
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Corne_Oled\"
@@ -64,36 +64,10 @@ include:
   - board: nice_nano_v2
     shield: corne_right nice_oled
     artifact-name: nice_corne_right_oled
-
-    # puchi_ble_v1 + nice_oled
-  - board: puchi_ble_v1
-    shield: corne_left nice_oled
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Puchi_Corne_O\"
-    artifact-name: puchi_corne_left_oled
-    snippet: studio-rpc-usb-uart
-  - board: puchi_ble_v1
-    shield: corne_right nice_oled
-    artifact-name: puchi_corne_right_oled
-
-    # peripheral_left + nice_nano_v2 + nice_oled
-  - board: nice_nano_v2
-    shield: corne_left_peripheral nice_oled
-    artifact-name: nice_corne_left_peripheral_oled
-
-    # peripheral_left + puchi_ble_v1 + nice_oled
-  - board: puchi_ble_v1
-    shield: corne_left_peripheral nice_oled
-    artifact-name: puchi_corne_left_peripheral_oled
     ### nice_oled END ###
 
   ### SETTINGS_RESET START ###
   - board: nice_nano_v2
     shield: settings_reset
     artifact-name: nice_settings_reset
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
-    artifact-name: xiao_settings_reset
-  - board: puchi_ble_v1
-    shield: settings_reset
-    artifact-name: puchi_settings_reset
   ### SETTINGS_RESET END ###
