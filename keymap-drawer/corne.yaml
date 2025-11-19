@@ -82,7 +82,7 @@ layers:
   - ']'
   - ''
   - LEFT CONTROL
-  - $$mdi:apple-keyboard-command$$
+  - RIGHT GUI
   - ''
   - ␣
   - BACKSPACE

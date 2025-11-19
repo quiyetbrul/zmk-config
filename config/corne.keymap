@@ -68,7 +68,7 @@
 &kp GRAVE  &kp EXCLAMATION     &kp AT              &kp HASH          &kp DOLLAR     &kp PERCENT          &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
 &kp TAB    &kp LA(LEFT_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT)  &kp LG(SPACE)        &kp MINUS       &kp PLUS       &kp LEFT_BRACE    &kp RIGHT_BRACE       &none                  &mo 3
 &kp LSHFT  &none               &none               &none             &none          &kp LA(BACKSPACE)    &kp UNDERSCORE  &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &none                  &kp LEFT_CONTROL
-                                                   &kp LGUI          &none          &kp SPACE            &kp BACKSPACE   &none          &kp LALT
+                                                   &kp RIGHT_GUI     &none          &kp SPACE            &kp BACKSPACE   &none          &kp LALT
             >;
         };
 
@@ -95,5 +95,7 @@
 };
 
 // LEDs are per half for split keyboards
+
 &led_strip { chain-length = <27>; };
+
 &led_strip { chain-length = <27>; };
