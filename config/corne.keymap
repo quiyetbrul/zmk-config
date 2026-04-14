@@ -39,6 +39,15 @@
                                     &kp RIGHT_GUI  &none       &kp SPACE      &kp BACKSPACE   &none          &kp LALT
             >;
         };
+
+        rectangle {
+            bindings = <
+&trans  &kp LS(LA(LG(LEFT)))    &kp LA(LG(UP_ARROW))  &kp LA(LC(LG(C)))        &kp LA(LC(LG(LS(RIGHT))))  &kp LS(LA(LG(RIGHT)))    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(LG(LEFT_ARROW))  &kp LA(LG(DOWN))      &kp LA(LG(RIGHT_ARROW))  &kp LA(LG(F))              &trans                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                  &trans                &trans                   &trans                     &trans                   &trans  &trans  &trans  &trans  &trans  &trans
+                                                      &trans                   &trans                     &trans                   &trans  &trans  &trans
+            >;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
