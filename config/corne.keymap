@@ -24,28 +24,28 @@
 
         lower_layer {
             bindings = <
-&none           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7    &kp NUMBER_8       &kp NUMBER_9     &kp NUMBER_0  &none
-&none           &none         &none         &none         &none         &none           &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW       &kp RIGHT_ARROW  &none         &none
-&kp LEFT_SHIFT  &none         &none         &none         &none         &kp C_PREV      &kp C_NEXT    &kp C_MUTE      &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp C_PP      &kp RCTRL
+&kp LC(GRAVE)   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0  &none
+&mo 3           &none         &none         &none         &none         &none           &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none         &none
+&kp LEFT_SHIFT  &none         &none         &none         &none         &none           &none         &none           &none         &none            &none         &kp RCTRL
                                             &kp LGUI      &none         &kp SPACE       &kp ENTER     &none           &kp LALT
             >;
         };
 
         raise_layer {
             bindings = <
-&kp GRAVE  &kp EXCLAMATION  &kp AT  &kp HASH       &kp DOLLAR  &kp PERCENT    &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
-&kp TAB    &none            &none   &none          &none       &none          &kp MINUS       &kp PLUS       &kp LEFT_BRACE    &kp RIGHT_BRACE       &none                  &none
-&kp LSHFT  &none            &none   &none          &none       &none          &kp UNDERSCORE  &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &none                  &kp LEFT_CONTROL
-                                    &kp RIGHT_GUI  &none       &kp SPACE      &kp BACKSPACE   &none          &kp LALT
+&kp GRAVE  &kp EXCLAMATION  &kp AT  &kp HASH       &kp DOLLAR     &kp PERCENT    &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&kp TAB    &none            &none   &none          &none          &none          &kp MINUS       &kp PLUS       &kp LEFT_BRACE    &kp RIGHT_BRACE       &none                  &none
+&kp LSHFT  &none            &none   &none          &none          &none          &kp UNDERSCORE  &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &none                  &kp LEFT_CONTROL
+                                    &kp RIGHT_GUI  &kp LG(SPACE)  &kp SPACE      &kp BACKSPACE   &none          &kp LALT
             >;
         };
 
-        rectangle {
+        tile_media {
             bindings = <
-&trans  &kp LS(LA(LG(LEFT)))    &kp LA(LG(UP_ARROW))  &kp LA(LC(LG(C)))        &kp LA(LC(LG(LS(RIGHT))))  &kp LS(LA(LG(RIGHT)))    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LA(LG(LEFT_ARROW))  &kp LA(LG(DOWN))      &kp LA(LG(RIGHT_ARROW))  &kp LA(LG(F))              &trans                   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                  &trans                &trans                   &trans                     &trans                   &trans  &trans  &trans  &trans  &trans  &trans
-                                                      &trans                   &trans                     &trans                   &trans  &trans  &trans
+&trans  &kp LS(LA(LG(LEFT)))    &kp LA(LG(UP_ARROW))  &kp LA(LC(LG(C)))        &kp LA(LC(LG(LS(RIGHT))))  &kp LS(LA(LG(RIGHT)))    &trans      &trans      &trans        &trans        &trans            &trans
+&trans  &kp LA(LG(LEFT_ARROW))  &kp LA(LG(DOWN))      &kp LA(LG(RIGHT_ARROW))  &kp LA(LG(F))              &trans                   &trans      &trans      &trans        &trans        &trans            &trans
+&trans  &trans                  &trans                &trans                   &trans                     &kp C_PREV               &kp C_NEXT  &kp C_MUTE  &kp K_VOL_DN  &kp K_VOL_UP  &kp C_PLAY_PAUSE  &trans
+                                                      &trans                   &trans                     &trans                   &trans      &trans      &trans
             >;
         };
     };
