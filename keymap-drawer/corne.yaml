@@ -43,7 +43,7 @@ layers:
   - {type: held}
   - ␣
   - ENTER
-  - ''
+  - Alt+BACKSPACE
   - $$mdi:apple-keyboard-option$$
   raise:
   - '`'
